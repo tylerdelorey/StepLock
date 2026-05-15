@@ -59,7 +59,7 @@ export const useAppStore = create<AppState>()(
       setStreak: (days) => set({ streakDays: days }),
 
       completeOnboarding: () => {
-        set({ hasCompletedOnboarding: true });
+        set({ hasCompletedOnboarding: false, });
       },
 
       checkAndUpdateLockStatus: () => {
